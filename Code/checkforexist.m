@@ -1,5 +1,5 @@
 function [exist]= checkforexist(x,y)
-x=x-1;y=y-1;
+% x=x-1;y=y-1;
 % This is function is used to check if the point (x,y) is inside the valid
 % worldspace.
 %% Defining Obstacles.
@@ -8,7 +8,7 @@ x=x-1;y=y-1;
 % xcircle=180;ycircle=120;r=15;
 % xpolygon=[120,158, 165,188,168,145];
 % ypolygon=[55,51,89,51,14,14];
-v= ((x-180)*(x-180)+ (y-120)*(y-120) - 15*15); %% Used to calculate if point is inside circle or not.
+v= ((x-180)*(x-180)+ (y-120)*(y-120) - 15.5*15.5); %% Used to calculate if point is inside circle or not.
 
 % Writing down the five equaltion of line of the polygon
 % Line 2 with coordinates (120,55) and (145,14)

@@ -1,42 +1,49 @@
 %% 
-function [openlist,Cost,Pnode,X,ncount,count,pos]=addnode(xy,X,openlist,closelist,Cost,Pnode,xgoal,ygoal,ncount,count,nodenum,pos)
-
-if (checkforexist(xy(1),xy(2)))  
+function [X,Pnode,ncount,pcount,open,cost,c2c,c]=addnode(xy,X,closelist,Pnode,xgoal,ygoal,ncount,count,pcount,nodenum,open,cost,c2c,c)
+resolution=1;
+ if (checkforexist(xy(1),xy(2)))  
    if (~ismember([xy(1) xy(2)],closelist,'rows'))       
         if(nodenum==1)
-            c2c= Pnode(1,3,count)+10;
+%             c2c= Pnode(1,3,count)+10;
+              c2c(pcount) = c(count) +10;
         else
-            c2c= Pnode(1,3,count)+ 14;
+%             c2c= Pnode(1,3,count)+ 14;
+              c2c(pcount)= c(count) +14;
         end
-        c2g= costtogo2(xy(1),xy(2),xgoal,ygoal);
-        totcost= c2c+c2g;
-      if (~ismember([xy(1) xy(2)],X,'rows'))
-        X=[X;xy(1),xy(2)];
-      end
-       try
-         check=Cost(xy(1),xy(2));
-       catch
-          Cost=accumarray(X,[reshape(Cost,[1 numel(Cost)]) inf]);
-       end
-        ncount=ncount+1;
-        if (totcost<Cost(xy(1),xy(2))|| Cost(xy(1),xy(2))==0 )
-%             Cost=accumarray(X,[Cost totcost]);
-            Cost(xy(1),xy(2))=totcost;
-            Pnode(:,:,ncount)= [ncount,count,c2c];
-            [check, index]=ismember([xy(1) xy(2)],openlist,'rows');
-            if(check)
-                openlist(index,:)=[xy(1) xy(2)];
-            else
-            openlist=[openlist;xy(1) xy(2)];
-            end
-
-%             c=1;
-        end
-        pos(:,:,ncount)=[xy(1) xy(2)];
-       
         
-%         rectangle('Position',[xy(1) xy(2) resolution resolution ], 'FaceColor','yellow','EdgeColor','r');pause(0.0001);
+        c2g= costtogo2(xy(1),xy(2),xgoal,ygoal);
+        totcost= c2c(pcount)+c2g;
+        
+        c=[c ,c2c(pcount)];
+        X= [X;xy(1) xy(2)];
+        
+        
+        if (ismember([xy(1) xy(2)],open,'rows'))      
+            [~,indexX]= ismember([xy(1) xy(2)],X,'rows');
+            [~,indexo]= ismember([xy(1) xy(2)],open,'rows');
+            if (c2c(pcount)< c(indexX))
+                Pnode(:,:,ncount)=[ncount,count];
+                cost(indexo)=totcost;
+            else
+                
+                Pnode(:,:,ncount)= [ncount,0];
+            end
+            
+        else
+            cost(pcount)= totcost;
+            Pnode(:,:,ncount)= [ncount,count];
+            open=[open; xy(1) xy(2)];
+            pcount=pcount+1;
+        end
+        
+        ncount=ncount+1;
+        rectangle('Position',[xy(1) xy(2) resolution resolution ], 'FaceColor','yellow','EdgeColor','r');pause(0.0001);
 
-   end     
+      
+                
+            
+  end
+         
+ end
 end
-end
+
