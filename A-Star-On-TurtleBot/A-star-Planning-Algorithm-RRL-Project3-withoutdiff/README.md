@@ -17,5 +17,6 @@ Useful Tips:
 
 
 <p align="center">
-<img src="https://github.com/anirudhtopiwala/ENPM-661-Planning-Projects/blob/master/A-Star-On-TurtleBot/A-star-Planning-Algorithm-RRL-Project3-without diff/Output/A* without diff.gif">
+<img src="https://github.com/anirudhtopiwala/ENPM-661-Planning-Projects/blob/master/A-Star-On-TurtleBot/A-star-Planning-Algorithm-RRL-Project3-without diff/Output/A*withoutdiff.gif">
 </p>
+
