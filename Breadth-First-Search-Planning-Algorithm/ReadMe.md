@@ -11,5 +11,5 @@ All the releavant information is written in the code itself in the form of comme
 
 
 <p align="center">
-<img src="https://github.com/anirudhtopiwala/ENPM-661-Planning-Projects/tree/master/Breadth-First-Search-Planning-Algorithm/Output/BFS.gif">
+<img src="https://github.com/anirudhtopiwala/ENPM-661-Planning-Projects/blob/master/Breadth-First-Search-Planning-Algorithm/Output/BFS.gif">
 </p>
