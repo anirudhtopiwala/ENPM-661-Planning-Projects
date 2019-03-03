@@ -14,3 +14,10 @@ Useful Tips:
 1) Uncomment Line 49 in addnode to visualize the exploration of nodes.
 2)Change resolution in Pro3 line 30 to get different outputs. Less the resolution more optimal the path. Note: keeping less resolution is although more optimal but it will make the path less smooth for turtlebot.
 3) See output folder to see the velocity text file and video simulation. The text file consits of velocities generated as per the time period mentioned on the file name.
+
+## Implementation Demo
+
+
+<p align="center">
+<img src="https://github.com/anirudhtopiwala/ENPM-661-Planning-Projects/tree/master/A-Star-On-TurtleBot/VREP- A-star-Planning-Algorithm-RRL-Project3-withoutdiff/Output/Vrep.gif">
+</p>

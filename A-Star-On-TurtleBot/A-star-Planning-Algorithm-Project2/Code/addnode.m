@@ -45,7 +45,7 @@ if (checkforexist(xy(1),xy(2), resolution))       %check for collision
         end
         
         % To Visualize output
-%         rectangle('Position',[xy(1) xy(2) resolution resolution ], 'FaceColor','yellow','EdgeColor','r');pause(0.0001);              
+        rectangle('Position',[xy(1) xy(2) resolution resolution ], 'FaceColor','yellow','EdgeColor','r');pause(0.0001);              
             
   end
          

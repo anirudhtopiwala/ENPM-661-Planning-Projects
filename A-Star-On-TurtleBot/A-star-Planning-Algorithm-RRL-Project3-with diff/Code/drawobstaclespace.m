@@ -4,7 +4,7 @@ function [] = drawobstaclespace()
 
  %% Draw GUI = World space with Obstacles
  
-%  figure('units','normalized','outerposition',[0 0 1 1])
+ figure('units','normalized','outerposition',[0 0 1 1])
 hold on
 title('Click a point in the world space to set starting point for the path plan!!');
 % grid on

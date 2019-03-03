@@ -12,3 +12,10 @@ To run the code:
 Useful Tips:
 1) Uncomment Line 46 in addnode to visualize the exploration of nodes.
 2) See output folder to see the velocity text file. The text file consits of velocities generated as per the mentioned time of 0.5 seconds or 2hz.
+
+## Implementation Demo
+
+
+<p align="center">
+<img src="https://github.com/anirudhtopiwala/ENPM-661-Planning-Projects/tree/master/A-Star-On-TurtleBot/A-star-Planning-Algorithm-RRL-Project3-with diff/Output/A* with diff.gif">
+</p>

@@ -8,7 +8,7 @@ clc;clear all;close all;
 
  % This is to restart with a new set of (xstart,ystart) and (xgoal,ygoal)
  button='Yes'; 
-%  while(strcmp(button,'Yes'))
+ while(strcmp(button,'Yes'))
 
  
  %% Draw GUI = World space with Obstacles
@@ -170,16 +170,16 @@ end
 maketext([path(:,3) path(:,4) path(:,5)],t);
 
 toc
-%     button = questdlg('Do you Want to try again');
-% 
-%     if (strcmp(button,'Cancel') || strcmp(button,'No'))
-%         close all;
-%         break;
-%     else
-%         close all;clc;clear all;
-%         button='Yes';
-%     end
-%  end
+    button = questdlg('Do you Want to try again');
+
+    if (strcmp(button,'Cancel') || strcmp(button,'No'))
+        close all;
+        break;
+    else
+        close all;clc;clear all;
+        button='Yes';
+    end
+ end
 
 
 
