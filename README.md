@@ -29,9 +29,15 @@ The BFS algorithm is implemented on the obstacle space found in the folder. The 
 <img src="https://github.com/anirudhtopiwala/ENPM-661-Planning-Projects/blob/master/A-Star-On-TurtleBot/A-star-Planning-Algorithm-RRL-Project3-with diff/Output/A*withdiff.gif">
 </p>
 
+The ROS simulation in gazebo is as below:
+<p align="center">
+<img src="https://github.com/anirudhtopiwala/ENPM-661-Planning-Projects/blob/master/A-Star-On-TurtleBot/A-star-Planning-Algorithm-RRL-Project3-with diff/Output/ros.gif">
+</p>
+
 5) A* implementation on turtlebot2 2. The algorithm generated in the last step is simulated in Vrep and then implemented on turtlebot2 using ROS at the robotics realization lab. The video can be found [here](https://youtu.be/4ogWmn3j0_o). The code can be found [here](https://github.com/anirudhtopiwala/ENPM-661-Planning-Projects/tree/master/A-Star-On-TurtleBot/VREP-%20A-star-Planning-Algorithm-RRL-Project3-withoutdiff).
 
 
 <p align="center">
 <img src="https://github.com/anirudhtopiwala/ENPM-661-Planning-Projects/blob/master/A-Star-On-TurtleBot/VREP- A-star-Planning-Algorithm-RRL-Project3-withoutdiff/Output/Vrep.gif">
 </p>
+

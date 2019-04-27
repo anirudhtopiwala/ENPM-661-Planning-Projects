@@ -19,3 +19,18 @@ Useful Tips:
 <p align="center">
 <img src="https://github.com/anirudhtopiwala/ENPM-661-Planning-Projects/blob/master/A-Star-On-TurtleBot/A-star-Planning-Algorithm-RRL-Project3-with diff/Output/A*withdiff.gif">
 </p>
+
+## ROS Implementation
+
+The ROS implementation can be executed by copy pasting the turtlebot_sim package into your catkin_ws. 
+(Note: the build may break due to dependency issue but the code is correct)
+
+After making the package, please run
+```
+roslaunch turtlebot_sim turtlebot_sim.launch 
+```
+
+The simulation in gazebo can be found below:
+<p align="center">
+<img src="https://github.com/anirudhtopiwala/ENPM-661-Planning-Projects/blob/master/A-Star-On-TurtleBot/A-star-Planning-Algorithm-RRL-Project3-with diff/Output/ros.gif">
+</p>
